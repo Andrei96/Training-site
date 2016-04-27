@@ -335,6 +335,7 @@ section.talk-us
       }
       p {
         display: inline-block;
+        margin-bottom: 50px;
         font-size: 18px;
         width: 850px;
         color: white;
@@ -378,7 +379,7 @@ section.contact-us {
             margin-bottom: 20px;
           }
           ul {
-            margin-left: 120px;
+            margin-left: 90px;
             li {
               &:nth-child(3), &:first-child, &:nth-child(2) {
                 margin-bottom: 20px;
@@ -421,7 +422,7 @@ section.contact-us {
           }
           input[type="submit"] {
             float: left;
-            margin-left: 120px;
+            margin-left: 90px;
             margin-top: 5px;
             padding: 10px 30px;
             background-color: #f27554;
