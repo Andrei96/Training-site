@@ -345,6 +345,7 @@ section.talk-us
   }
 }
 section.contact-us {
+  overflow: hidden;
   .wrapper {
     .content {
       text-align: center;
@@ -371,6 +372,8 @@ section.contact-us {
         float: left;
         form {
           h3 {
+            margin-left: 40px;
+            text-align: left;
             font: bold 20px 'Liberation Sans', sans-serif;
             margin-bottom: 20px;
           }
@@ -380,13 +383,17 @@ section.contact-us {
               &:nth-child(3), &:first-child, &:nth-child(2) {
                 margin-bottom: 20px;
               }
-              span{
-                display: inline;
-                color: #9d9c9c;
-                &.fa {
-                  margin-right: 20px;
-                  font-size: 20px;
-                  color: #f27554;
+              div.list-address {
+                text-align: left;
+                width: 289px;
+                span{
+                  display: inline;
+                  color: #9d9c9c;
+                  &.fa {
+                    margin-right: 20px;
+                    font-size: 20px;
+                    color: #f27554;
+                  }
                 }
               }
               input[type="text"], input[type="email"]{
@@ -414,7 +421,8 @@ section.contact-us {
           }
           input[type="submit"] {
             float: left;
-           margin-left: 120px;
+            margin-left: 120px;
+            margin-top: 5px;
             padding: 10px 30px;
             background-color: #f27554;
             border: none;
@@ -423,6 +431,26 @@ section.contact-us {
             color: white;
           }
         }
+      }
+    }
+  }
+}
+footer {
+  position: relative;
+  bottom: -200px;
+  margin-top: 70px;
+  .wrapper {
+    margin: 0;
+    .content {
+      position: relative;
+      bottom: 90px;
+      clear: both;
+      background-color: #f27554;
+      h4 {
+        position: relative;
+        padding: 30px 0;
+        text-align: center;
+        color: #fff;
       }
     }
   }
