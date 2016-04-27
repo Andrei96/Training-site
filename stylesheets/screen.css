@@ -344,18 +344,35 @@ section.talk-us .wrapper .content p {
 section.contact-us .wrapper .content {
   text-align: center;
 }
-section.contact-us .wrapper .content h2 {
+section.contact-us .wrapper .content .address-information h2 {
   margin: 50px 0;
   font: bold 26px 'Liberation Sans', sans-serif;
   color: #484848;
   text-transform: capitalize;
 }
-section.contact-us .wrapper .content p.descr {
+section.contact-us .wrapper .content .address-information p.descr {
   display: inline-block;
   margin-bottom: 100px;
   width: 900px;
   font: 500 16px 'Liberation Sans', sans-serif;
   color: #a3a2a2;
+}
+section.contact-us .wrapper .content .map {
+  float: left;
+}
+section.contact-us .wrapper .content .contact {
+  float: left;
+}
+section.contact-us .wrapper .content .contact form h3 {
+  font: bold 23px 'Liberation Sans', sans-serif;
+}
+section.contact-us .wrapper .content .contact form span {
+  display: block;
+  color: #9d9c9c;
+}
+section.contact-us .wrapper .content .contact form span:first-child:before {
+  font-family: "FontAwesome";
+  content: ">>>>";
 }
 
 @media (min-width: 900px) {

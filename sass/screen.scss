@@ -348,25 +348,41 @@ section.contact-us {
   .wrapper {
     .content {
       text-align: center;
-      h2 {
-        margin: 50px 0;
-        font: bold 26px 'Liberation Sans', sans-serif;
-        color: #484848;
-        //border-bottom: 2px solid #f36b47;
-        text-transform: capitalize;
-      }
-      p.descr {
-        display: inline-block;
-        margin-bottom: 100px;
-        width: 900px;
-        font: 500 16px 'Liberation Sans', sans-serif;
-        color: #a3a2a2;
+      .address-information {
+        h2 {
+          margin: 50px 0;
+          font: bold 26px 'Liberation Sans', sans-serif;
+          color: #484848;
+          //border-bottom: 2px solid #f36b47;
+          text-transform: capitalize;
+        }
+        p.descr {
+          display: inline-block;
+          margin-bottom: 100px;
+          width: 900px;
+          font: 500 16px 'Liberation Sans', sans-serif;
+          color: #a3a2a2;
+        }
       }
       .map {
         float: left;
       }
       .contact {
-        float: right;
+        float: left;
+        form {
+
+          h3 {
+            font: bold 23px 'Liberation Sans', sans-serif;
+          }
+          span {
+            display: block;
+            color: #9d9c9c;
+            &:first-child:before {
+              font-family: "FontAwesome";
+              content: ">>>>";
+            }
+          }
+        }
       }
     }
   }
