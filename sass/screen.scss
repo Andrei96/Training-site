@@ -370,17 +370,57 @@ section.contact-us {
       .contact {
         float: left;
         form {
-
           h3 {
-            font: bold 23px 'Liberation Sans', sans-serif;
+            font: bold 20px 'Liberation Sans', sans-serif;
+            margin-bottom: 20px;
           }
-          span {
-            display: block;
-            color: #9d9c9c;
-            &:first-child:before {
-              font-family: "FontAwesome";
-              content: ">>>>";
+          ul {
+            margin-left: 120px;
+            li {
+              &:nth-child(3), &:first-child, &:nth-child(2) {
+                margin-bottom: 20px;
+              }
+              span{
+                display: inline;
+                color: #9d9c9c;
+                &.fa {
+                  margin-right: 20px;
+                  font-size: 20px;
+                  color: #f27554;
+                }
+              }
+              input[type="text"], input[type="email"]{
+                display: inherit;
+                margin-bottom: 5px;
+                padding: 15px;
+                width: 300px;
+                border: 1px solid #cac6c6;
+                font-size: 14px;
+                background-color: #f0f0f0;
+              }
+
+              textarea {
+                padding: 15px;
+                width: 500px;
+                height: 150px;
+                border: 1px solid #cac6c6;
+                font-size: 14px;
+                background-color: #f0f0f0;
+                overflow: hidden;
+                resize: none;
+              }
             }
+
+          }
+          input[type="submit"] {
+            float: left;
+           margin-left: 120px;
+            padding: 10px 30px;
+            background-color: #f27554;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            color: white;
           }
         }
       }

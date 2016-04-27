@@ -364,15 +364,52 @@ section.contact-us .wrapper .content .contact {
   float: left;
 }
 section.contact-us .wrapper .content .contact form h3 {
-  font: bold 23px 'Liberation Sans', sans-serif;
+  font: bold 20px 'Liberation Sans', sans-serif;
+  margin-bottom: 20px;
 }
-section.contact-us .wrapper .content .contact form span {
-  display: block;
+section.contact-us .wrapper .content .contact form ul {
+  margin-left: 120px;
+}
+section.contact-us .wrapper .content .contact form ul li:nth-child(3), section.contact-us .wrapper .content .contact form ul li:first-child, section.contact-us .wrapper .content .contact form ul li:nth-child(2) {
+  margin-bottom: 20px;
+}
+section.contact-us .wrapper .content .contact form ul li span {
+  display: inline;
   color: #9d9c9c;
 }
-section.contact-us .wrapper .content .contact form span:first-child:before {
-  font-family: "FontAwesome";
-  content: ">>>>";
+section.contact-us .wrapper .content .contact form ul li span.fa {
+  margin-right: 20px;
+  font-size: 20px;
+  color: #f27554;
+}
+section.contact-us .wrapper .content .contact form ul li input[type="text"], section.contact-us .wrapper .content .contact form ul li input[type="email"] {
+  display: inherit;
+  margin-bottom: 5px;
+  padding: 15px;
+  width: 300px;
+  border: 1px solid #cac6c6;
+  font-size: 14px;
+  background-color: #f0f0f0;
+}
+section.contact-us .wrapper .content .contact form ul li textarea {
+  padding: 15px;
+  width: 500px;
+  height: 150px;
+  border: 1px solid #cac6c6;
+  font-size: 14px;
+  background-color: #f0f0f0;
+  overflow: hidden;
+  resize: none;
+}
+section.contact-us .wrapper .content .contact form input[type="submit"] {
+  float: left;
+  margin-left: 120px;
+  padding: 10px 30px;
+  background-color: #f27554;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  color: white;
 }
 
 @media (min-width: 900px) {
