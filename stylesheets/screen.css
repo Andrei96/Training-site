@@ -1,0 +1,365 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+header {
+  background-color: #fff;
+  overflow: hidden;
+}
+header .wrapper .content {
+  padding: 50px 0;
+  margin-bottom: 20px;
+}
+header .wrapper .content .logo-name {
+  float: left;
+  padding-top: 10px;
+  font: bold 22px/0 'Liberation Sans', sans-serif;
+}
+header .wrapper .content .logo-name span {
+  color: #f36b47;
+}
+header .wrapper .content .menu-list {
+  text-transform: uppercase;
+  float: right;
+}
+header .wrapper .content .menu-list ul li {
+  position: relative;
+  display: inline;
+  margin-right: 30px;
+}
+header .wrapper .content .menu-list ul li:hover {
+  border-bottom: 2px solid #f36b47;
+  z-index: 1;
+}
+header .wrapper .content .menu-list ul li:hover:after {
+  position: absolute;
+  top: 9px;
+  left: 40%;
+  font-family: 'FontAwesome';
+  content: "\f0dd";
+  color: #f36b47;
+  z-index: -1;
+}
+header .wrapper .content .menu-list ul li:last-child {
+  margin-right: 0;
+}
+
+section.slider .wrapper {
+  margin: 0;
+}
+section.slider .wrapper .content {
+  position: relative;
+  background: #ccc url("../images/nature-full-hd.jpg") center top no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+section.slider .wrapper .content:after {
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  font-size: 70px;
+  font-family: 'FontAwesome';
+  content: '\f053';
+  color: #9f503d;
+}
+section.slider .wrapper .content:before {
+  position: absolute;
+  top: 40%;
+  right: 5%;
+  font-size: 70px;
+  font-family: 'FontAwesome';
+  content: "\f054";
+  color: #9f503d;
+}
+section.slider .wrapper .content .slide-name {
+  width: 600px;
+  margin: 200px 0;
+  position: relative;
+  top: 40%;
+  left: 22%;
+}
+section.slider .wrapper .content .slide-name h2 {
+  display: inline-block;
+  position: relative;
+  left: 40%;
+  top: 40%;
+  padding: 10px 60px;
+  background-color: rgba(0, 0, 0, 0.5);
+  font: bold 26px/1.5em 'Ubuntu Light', sans-serif;
+  color: white;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+section.slider .wrapper .content .slide-name h2 + h2 {
+  display: inline-block;
+  left: 30%;
+  margin-bottom: 0;
+}
+
+section.description .wrapper {
+  margin: 0;
+}
+section.description .wrapper .content {
+  padding: 50px 20px;
+  background-color: #f36b47;
+}
+section.description .wrapper .content h2 {
+  font: 26px/1.5em 'Liberation Sans', sans-serif;
+  color: white;
+  text-align: center;
+}
+section.description .wrapper .content h2 > span {
+  text-transform: uppercase;
+  font-weight: bold;
+  border-bottom: 0.1px solid white;
+}
+
+section.about-us .wrapper .content h2 {
+  margin: 50px 0;
+  font: bold 26px 'Liberation Sans', sans-serif;
+  color: #484848;
+  text-align: center;
+}
+section.about-us .wrapper .content p.descr {
+  position: relative;
+  left: 200px;
+  margin-bottom: 100px;
+  width: 1000px;
+  font: 500 16px 'Liberation Sans', sans-serif;
+  color: #a3a2a2;
+  text-align: center;
+}
+section.about-us .wrapper .content ul {
+  margin: 0 8%;
+}
+section.about-us .wrapper .content ul li {
+  display: inline-block;
+  width: 250px;
+  margin-right: 70px;
+}
+section.about-us .wrapper .content ul li span {
+  display: block;
+  position: relative;
+  font: 20px 'Liberation Sans', sans-serif;
+  text-align: center;
+}
+section.about-us .wrapper .content ul li span:before {
+  position: absolute;
+  font-family: "FontAwesome";
+  bottom: 40px;
+  color: #f36b47;
+  font-size: 30px;
+  display: inline-block;
+  width: 130px;
+  text-align: center;
+}
+section.about-us .wrapper .content ul li p {
+  margin-top: 10px;
+  margin-bottom: 50px;
+  color: #a3a2a2;
+  font-size: 14px;
+  text-align: justify;
+  line-height: 1.3em;
+}
+section.about-us .wrapper .content ul li:first-child span:before {
+  content: "\f00b";
+  width: 170px;
+}
+section.about-us .wrapper .content ul li:nth-child(2) span:before {
+  content: "\f121";
+}
+section.about-us .wrapper .content ul li:nth-child(3) span:before {
+  content: "\f245";
+}
+section.about-us .wrapper .content ul li:last-child {
+  margin-right: 0;
+}
+section.about-us .wrapper .content ul li:last-child span:before {
+  content: "\f095";
+}
+
+section.portfolio {
+  overflow: hidden;
+}
+section.portfolio .wrapper .content h2 {
+  margin-bottom: 20px;
+  font: bold 26px 'Liberation Sans', sans-serif;
+  color: #484848;
+  text-align: center;
+}
+section.portfolio .wrapper .content p.descr {
+  position: relative;
+  left: 400px;
+  margin-bottom: 40px;
+  width: 700px;
+  font: 16px 'Liberation Sans', sans-serif;
+  color: #a3a2a2;
+  text-align: center;
+}
+section.portfolio .wrapper .content ul.list-project {
+  margin: 0 0 0 140px;
+}
+section.portfolio .wrapper .content ul.list-project li {
+  float: left;
+  margin-right: 70px;
+}
+section.portfolio .wrapper .content ul.list-project li img {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+section.portfolio .wrapper .content ul.description-project {
+  margin: 0 0 100px 140px;
+}
+section.portfolio .wrapper .content ul.description-project li {
+  float: left;
+  margin-top: -2px;
+  margin-right: 71px;
+  margin-bottom: 50px;
+  padding: 0 7px 3px;
+  width: 235px;
+  background-color: #eee;
+}
+section.portfolio .wrapper .content ul.description-project li:last-child {
+  margin-right: 0;
+}
+section.portfolio .wrapper .content ul.description-project li a span.name-project {
+  display: block;
+  position: relative;
+  padding: 10px 10px 5px 0;
+  font: bolder 16px 'Liberation Sans', sans-serif;
+  text-align: right;
+  color: #f36b47;
+  border-bottom: 1px solid #d5d3d3;
+}
+section.portfolio .wrapper .content ul.description-project li a span.name-project:after {
+  position: absolute;
+  bottom: 34px;
+  left: -8px;
+  background-color: #f36b47;
+  opacity: 0.8;
+  height: 105px;
+  width: 250px;
+  font-family: "FontAwesome";
+  content: "\f0c1";
+  font-size: 50px;
+  color: white;
+  text-align: center;
+  padding-top: 60px;
+}
+section.portfolio .wrapper .content ul.description-project li p {
+  margin-top: 10px;
+  padding-bottom: 5px;
+  padding-right: 10px;
+  font-size: 13px;
+  text-align: right;
+  color: #605f5f;
+}
+
+section.talk-us {
+  margin-top: 50px;
+}
+section.talk-us .wrapper {
+  margin: 0;
+}
+section.talk-us .wrapper .content {
+  padding: 50px;
+  background-color: #7a7a7a;
+  clear: both;
+  text-align: center;
+}
+section.talk-us .wrapper .content h2 {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font: 72px 'Liberation Sans', sans-serif;
+  text-transform: capitalize;
+  color: #fff;
+}
+section.talk-us .wrapper .content h2 span {
+  color: #f36b47;
+}
+section.talk-us .wrapper .content p {
+  display: inline-block;
+  font-size: 18px;
+  width: 850px;
+  color: white;
+  line-height: 1.5em;
+}
+
+section.contact-us .wrapper .content {
+  text-align: center;
+}
+section.contact-us .wrapper .content h2 {
+  margin: 50px 0;
+  font: bold 26px 'Liberation Sans', sans-serif;
+  color: #484848;
+  text-transform: capitalize;
+}
+section.contact-us .wrapper .content p.descr {
+  display: inline-block;
+  margin-bottom: 100px;
+  width: 900px;
+  font: 500 16px 'Liberation Sans', sans-serif;
+  color: #a3a2a2;
+}
+
+@media (min-width: 900px) {
+  .wrapper {
+    margin: 0 10%;
+  }
+}
